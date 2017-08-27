@@ -297,7 +297,6 @@ PRODUCT_PACKAGES += \
     wifilogd
 
 PRODUCT_PACKAGES += \
-    hostapd_default.conf \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf
