@@ -50,7 +50,7 @@ etc/acdbdata/QRD/msm8939-snd-card-skul/QRD_SKUL_Headset_cal.acdb
 etc/acdbdata/QRD/msm8939-snd-card-skul/QRD_SKUL_Speaker_cal.acdb
 
 # ADSP
-bin/adsprpcd
+bin/adsprpcd:vendor/bin/adsprpcd
 vendor/lib64/libadsprpc.so
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvopt.so
@@ -78,7 +78,7 @@ lib/libsphere3.so
 lib/style.cng
 
 # Audio
-bin/tfamode
+bin/tfamode:vendor/bin/tfamode
 etc/Tfa9887.cnt
 lib/libtfa9887.so
 lib64/libtfa9887.so
@@ -97,15 +97,15 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 
 # Battery
-bin/vm_bms
+bin/vm_bms:vendor/bin/vm_bms
 
 # Bluetooth
-bin/btnvtool
-bin/hci_qcomm_init
+bin/btnvtool:vendor/bin/btnvtool
+bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 vendor/lib64/libbtnv.so
 
 # Camera
-bin/mm-qcamera-daemon
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 lib/hw/camera.msm8916.so:lib/hw/camera.vendor.msm8916.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
@@ -372,8 +372,8 @@ vendor/lib/libmm-abl-oem.so
 vendor/lib/libmm-disp-apis.so
 vendor/lib/libmm-qdcm.so
 
-# Qualcomm framework - from kipper
-bin/irsc_util
+# Qualcomm framework - from crackling
+bin/irsc_util:vendor/bin/irsc_util
 etc/data/dsi_config.xml
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
@@ -486,7 +486,7 @@ vendor/lib64/libthermalioctl.so
 
 # Time services
 -app/TimeService/TimeService.apk
-bin/time_daemon
+bin/time_daemon:vendor/bin/time_daemon
 -vendor/lib64/libtime_genoff.so
 -vendor/lib/libtime_genoff.so
 vendor/lib64/libTimeService.so
