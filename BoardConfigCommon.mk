@@ -85,12 +85,6 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    $(VENDOR_PATH)/cmhw
-
 # Crypto
 # FDE works only in software mode, disable HW.
 TARGET_SWV8_DISK_ENCRYPTION := true
@@ -137,6 +131,10 @@ endif
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
+
+# Lineage hardware
+BOARD_HARDWARE_CLASS += \
+    $(VENDOR_PATH)/lineagehw
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
