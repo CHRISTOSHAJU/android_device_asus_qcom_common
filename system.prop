@@ -98,6 +98,9 @@ persist.radio.imsregrequired=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 
+# Shutdown timeout
+ro.build.shutdown_timeout=0
+
 # Storage
 ro.sys.sdcardfs=true
 
