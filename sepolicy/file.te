@@ -22,6 +22,8 @@ type asusevtlog, file_type;
 
 type proc_boot_reason, fs_type;
 
+type debugfs_rmt, debugfs_type, fs_type;
+
 type camera_db_file, file_type;
 
 type imsdatadaemon, file_type;
