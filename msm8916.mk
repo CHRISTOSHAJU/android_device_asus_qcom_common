@@ -244,7 +244,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.bt.sh \
-    init.qcom.opengles.sh \
     init.qcom.power.sh \
     init.qcom.factory.sh
 
@@ -253,6 +252,7 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
+    init.target.rc \
     ueventd.qcom.rc
 
 # Recovery

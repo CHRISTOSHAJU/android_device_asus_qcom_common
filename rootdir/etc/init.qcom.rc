@@ -693,7 +693,7 @@ service rfs_access /vendor/bin/rfs_access
    user system
    group system net_raw
 
-service hciattach /system/bin/sh /system/vendor/etc/init.qcom.bt.sh
+service hciattach /system/vendor/bin/init.qcom.bt.sh
     class late_start
     user bluetooth
     group bluetooth net_bt_admin
